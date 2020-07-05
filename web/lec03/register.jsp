@@ -15,8 +15,10 @@
 <%
     String name=request.getParameter("username");
     String password=request.getParameter("pass");
-    String password１=request.getParameter("pass１");
-    if(password==password１) {
+    String password１=request.getParameter("pass1");
+
+    if(password.equals(password１)) {
+
         users.register(name, password);
         if (users.login(name, password)) {
             session.setAttribute("name", name);
@@ -26,7 +28,7 @@
     else
     {
         out.print("注册失败！！！");
-       response.sendRedirect("register.html");
+
     }
 %>
 
