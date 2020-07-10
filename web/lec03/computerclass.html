@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        input{
+            background: #a59e9f;
+            border:0px solid rgba(204, 0, 82, 0.16);
+        }
+    </style>
+</head>
+<body>
+<table border="1px" >
+    <div align="center">
+        <h2 align="center">欢迎来到五一书店</h2>
+        图书分类>>>
+        <a href="historyclass.html">历史类图书</a>&nbsp&nbsp
+        <a href="computerclass.html">计算机类图书</a><br>
+
+        <p>#####书籍列表#####</p>
+        <form action="computerclass.jsp " method="post">
+            <input type="text"  name="book" value="《javaweb》&nbsp&nbsp&nbsp&nbsp张毅&nbsp&nbsp&nbsp 65.1元"  size="40" maxlength="200" readonly>
+            <input type="submit" name="add" value="加入购物车" height="2">
+        </form>
+
+        <form action="computerclass.jsp" method="post">
+            <input type="text"  name="book" value="《计算机网络》&nbsp&nbsp&nbsp&nbsp庄明&nbsp&nbsp&nbsp 59.0元"  size="40" maxlength="200" readonly>
+            <input type="submit" name="add" value="加入购物车" height="2">
+        </form>
+        <form action="computerclass.jsp" method="post">
+            <input type="text"  name="book" value="《软件工程》&nbsp&nbsp&nbsp&nbsp李伟&nbsp&nbsp&nbsp 78.6元"  size="40" maxlength="200" readonly>
+            <input type="submit" name="add" value="加入购物车" height="2">
+        </form>
+        <form action="computerclass.jsp " method="post">
+            <input type="text"  name="book" value="《嵌入式编程》&nbsp&nbsp&nbsp&nbsp陈开&nbsp&nbsp&nbsp 77.0元"  size="40" maxlength="200" readonly>
+            <input type="submit" name="add" value="加入购物车" height="2">
+        </form>
+        <form action="computerclass.jsp" method="post">
+            <input type="text"  name="book" value="《数据结构》&nbsp&nbsp&nbsp&nbsp黄军&nbsp&nbsp&nbsp 78.4元"  size="40" maxlength="200" readonly>
+            <input type="submit" name="add" value="加入购物车" height="2">
+        </form>
+        <br>
+        <input type="button" value="查看我的购物车 " onClick="location.href='cart.jsp'"><br>
+    </div>
+</table>
+</body>
+</html>
