@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@page import="usersB.users" %>
+<%@page import="usersB.users01" %>
 <html>
 <head>
     <title>Title</title>
@@ -15,7 +15,8 @@
 <%
 String users=request.getParameter("username");
 String password=request.getParameter("password");
-if(usersB.users.login(users,password)){
+if(users01.login(users,password)){
+    System.err.print("111111111111111111111111111111111");
     response.sendRedirect("historyclass.html");
 }
 else {
